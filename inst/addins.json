@@ -19,7 +19,7 @@
     "raddins::git_status": "Ctrl+Shift+S",
     "raddins::git_commit_all": "Ctrl+Shift+X",
     "shrtcts::shortcut_01": "Cmd+5",
-    "raddins::git_pull": "Alt+Shift+P"
+    "raddins::git_pull": "Alt+Shift+P",
     "AMR::addin_insert_in": "Shift+Cmd+I",
     "addinexamples::insertInAddin": "Shift+Cmd+I",
     "addinexamplesWV::insertMagrittrCompoundPipeAddin": "Shift+Cmd+B",
