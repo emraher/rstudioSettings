@@ -24,17 +24,17 @@ Sys.setenv("R_REMOTES_UPGRADE" = "never")
 
 if (minimal != 1) {
   options("install.packages.compile.from.source" = "no")
-  remotes::install_github("gadenbuie/rsthemes")
-  rsthemes::install_rsthemes(include_base16 = TRUE)
+  if (!requireNamespace("rsthemes", quietly = TRUE)) remotes::install_github("gadenbuie/rsthemes")
+  if (!requireNamespace("rsthemes", quietly = TRUE)) rsthemes::install_rsthemes(include_base16 = TRUE)
 
-  remotes::install_github("cynkra/fledge")
-  remotes::install_github("r-lib/prettycode")
-  remotes::install_github("tmastny/browse")
-  remotes::install_github("lorenzwalthert/teamtools")
+  if (!requireNamespace("fledge", quietly = TRUE)) remotes::install_github("cynkra/fledge")
+  if (!requireNamespace("prettycode", quietly = TRUE)) remotes::install_github("r-lib/prettycode")
+  if (!requireNamespace("browse", quietly = TRUE)) remotes::install_github("tmastny/browse")
+  if (!requireNamespace("teamtools", quietly = TRUE)) remotes::install_github("lorenzwalthert/teamtools")
 
-  remotes::install_github("gaborcsardi/prompt")
-  remotes::install_github("jalvesaq/colorout")
-  remotes::install_github("csgillespie/rprofile")
+  if (!requireNamespace("prompt", quietly = TRUE)) remotes::install_github("gaborcsardi/prompt")
+  if (!requireNamespace("colorout", quietly = TRUE)) remotes::install_github("jalvesaq/colorout")
+  if (!requireNamespace("rprofile", quietly = TRUE)) remotes::install_github("csgillespie/rprofile")
 
   if (!requireNamespace("reprex", quietly = TRUE)) install.packages("reprex")
 }
@@ -240,8 +240,8 @@ fun_with_spinner <- function() {
   # scrape settings from gist ----------------------------------------------------
 
   if (minimal != 1) {
-    keybindings <- jsonlite::read_json("https://raw.githubusercontent.com/emraher/rstudioSettings/master/inst/rstudio-bindings-patrick.json")
-    general <- jsonlite::read_json("https://raw.githubusercontent.com/emraher/rstudioSettings/master/inst/rstudio-prefs-patrick.json")
+    keybindings <- jsonlite::read_json("https://raw.githubusercontent.com/emraher/rstudioSettings/master/inst/rstudio-bindings-emrah.json")
+    general <- jsonlite::read_json("https://raw.githubusercontent.com/emraher/rstudioSettings/master/inst/rstudio-prefs-emrah.json")
     addins <- jsonlite::read_json("https://raw.githubusercontent.com/emraher/rstudioSettings/master/inst/addins.json")
     snippets <- readLines("https://raw.githubusercontent.com/emraher/rstudioSettings/master/inst/r.snippets")
   } else {
