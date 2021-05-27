@@ -22,10 +22,8 @@ Because this config relies on a custom 3-pane layout, RStudio v1.4.162 or greate
 Call the following to start the process
 
 ``` r
-source("https://raw.githubusercontent.com/pat-s/rstudioSettings/master/R/install.R")
+source("https://raw.githubusercontent.com/emraher/rstudioSettings/master/R/install.R")
 
-# short alternative
-source("https://bit.ly/rstudio-config-pat")
 ```
 
 # How can I use my own settings?
