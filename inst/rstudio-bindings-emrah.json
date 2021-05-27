@@ -1,6 +1,6 @@
 {
     "goToFileFunction": "Ctrl+P",
-    "insertPipeOperator": "Ctrl+O",
+    "insertPipeOperator": "Shift+Cmd+M",
     "restartR": "Ctrl+R",
     "activateTerminal": "Ctrl+3",
     "browseAddins": "",

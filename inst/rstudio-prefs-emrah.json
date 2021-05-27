@@ -37,7 +37,7 @@
     "code_completion_characters": 2,
     "code_completion_delay": 50,
     "console_double_click_select": true,
-    "continue_comments_on_newline": true,
+    "continue_comments_on_newline": false,
     "default_encoding": "UTF-8",
     "default_latex_program": "XeLaTeX",
     "default_project_location": "~/Downloads",
