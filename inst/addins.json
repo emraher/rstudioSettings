@@ -7,9 +7,7 @@
     "drake::rs_addin_r_vis_drake_graph": "Ctrl+Shift+V",
     "drake::rs_addin_r_make": "",
     "styler::style_active_pkg": "",
-    "styler::style_selection": "",
     "xaringan::inf_mr": "",
-    "styler::set_style_transformers": "",
     "browse::browse": "Ctrl+B",
     "raddins::reload_project": "Cmd+R",
     "raddins::open_github": "Shift+Cmd+G",
@@ -22,4 +20,11 @@
     "raddins::git_commit_all": "Ctrl+Shift+X",
     "shrtcts::shortcut_01": "Cmd+5",
     "raddins::git_pull": "Alt+Shift+P"
+    "AMR::addin_insert_in": "Shift+Cmd+I",
+    "addinexamples::insertInAddin": "Shift+Cmd+I",
+    "addinexamplesWV::insertMagrittrCompoundPipeAddin": "Shift+Cmd+B",
+    "addinexamplesWV::insertUsr1Addin": "Ctrl+-",
+    "styler::set_style_transformers": "Ctrl+Shift+Cmd+S",
+    "styler::style_selection": "Shift+Cmd+S"
+
 }
