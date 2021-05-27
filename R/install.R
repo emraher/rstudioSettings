@@ -31,6 +31,11 @@ if (minimal != 1) {
   remotes::install_github("r-lib/prettycode")
   remotes::install_github("tmastny/browse")
   remotes::install_github("lorenzwalthert/teamtools")
+
+  remotes::install_github("gaborcsardi/prompt")
+  remotes::install_github("jalvesaq/colorout")
+  remotes::install_github("csgillespie/rprofile")
+
   if (!requireNamespace("reprex", quietly = TRUE)) install.packages("reprex")
 }
 
@@ -342,7 +347,7 @@ fun_with_spinner()
 cli::ansi_with_hidden_cursor(fun_with_spinner())
 
 if (minimal != 1) {
-  cli::cli_alert_success("Successfully installed Patrick's RStudio settings.")
+  cli::cli_alert_success("Successfully installed Emrah Er's RStudio settings.")
 } else {
   cli::cli_alert_success("Successfully supercharged your RStudio settings.")
 }
