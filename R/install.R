@@ -232,7 +232,7 @@ fun_with_spinner <- function() {
   # addins ---------------------------------------------------------------------
 
   if (minimal != 1) {
-    remotes::install_github("emraher/raddins", quiet = TRUE)
+    remotes::install_github("pat-s/raddins", quiet = TRUE)
     if (!requireNamespace("xaringan", quietly = TRUE)) install.packages("xaringan")
     if (!requireNamespace("styler", quietly = TRUE)) install.packages("styler")
   }
