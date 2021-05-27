@@ -33,7 +33,6 @@ if (minimal != 1) {
   if (!requireNamespace("teamtools", quietly = TRUE)) remotes::install_github("lorenzwalthert/teamtools")
 
   if (!requireNamespace("prompt", quietly = TRUE)) remotes::install_github("gaborcsardi/prompt")
-  if (!requireNamespace("colorout", quietly = TRUE)) remotes::install_github("jalvesaq/colorout")
   if (!requireNamespace("rprofile", quietly = TRUE)) remotes::install_github("csgillespie/rprofile")
 
   if (!requireNamespace("reprex", quietly = TRUE)) install.packages("reprex")
@@ -110,6 +109,7 @@ switch(Sys.info()[["sysname"]],
     }
   },
   Linux = {
+    if (!requireNamespace("colorout", quietly = TRUE)) remotes::install_github("jalvesaq/colorout")
     fs::dir_create(glue::glue("{linux_dir}/keybindings"), recurse = TRUE)
     # rstudio_bindings
     if (fs::file_exists(glue::glue("{linux_dir}/keybindings/rstudio_bindings.json"))) {
@@ -154,6 +154,7 @@ switch(Sys.info()[["sysname"]],
     }
   },
   Darwin = {
+    if (!requireNamespace("colorout", quietly = TRUE)) remotes::install_github("jalvesaq/colorout")
     fs::dir_create(glue::glue("{mac_dir}/keybindings"), recurse = TRUE)
     # rstudio_bindings
     if (fs::file_exists(glue::glue("{mac_dir}/keybindings/rstudio_bindings.json"))) {
