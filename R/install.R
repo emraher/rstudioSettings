@@ -19,8 +19,9 @@ if (!requireNamespace("cli", quietly = TRUE)) install.packages("cli")
 if (!requireNamespace("fs", quietly = TRUE)) install.packages("fs")
 if (!requireNamespace("glue", quietly = TRUE)) install.packages("glue")
 
-# never upgrade packages during remotes install to avoid user input
-Sys.setenv("R_REMOTES_UPGRADE" = "never")
+# always upgrade packages during remotes install to avoid user input
+# Students don't upgrade packages and some packages require new versions
+Sys.setenv("R_REMOTES_UPGRADE" = "always")
 
 if (minimal != 1) {
   options("install.packages.compile.from.source" = "no")
