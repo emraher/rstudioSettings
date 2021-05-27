@@ -232,7 +232,7 @@ fun_with_spinner <- function() {
   # addins ---------------------------------------------------------------------
 
   if (minimal != 1) {
-    remotes::install_github("pat-s/raddins", quiet = TRUE)
+    remotes::install_github("emraher/raddins", quiet = TRUE)
     if (!requireNamespace("xaringan", quietly = TRUE)) install.packages("xaringan")
     if (!requireNamespace("styler", quietly = TRUE)) install.packages("styler")
   }
@@ -240,13 +240,13 @@ fun_with_spinner <- function() {
   # scrape settings from gist ----------------------------------------------------
 
   if (minimal != 1) {
-    keybindings <- jsonlite::read_json("https://raw.githubusercontent.com/pat-s/rstudioSettings/master/inst/rstudio-bindings-patrick.json")
-    general <- jsonlite::read_json("https://raw.githubusercontent.com/pat-s/rstudioSettings/master/inst/rstudio-prefs-patrick.json")
-    addins <- jsonlite::read_json("https://raw.githubusercontent.com/pat-s/rstudioSettings/master/inst/addins.json")
-    snippets <- readLines("https://raw.githubusercontent.com/pat-s/rstudioSettings/master/inst/r.snippets")
+    keybindings <- jsonlite::read_json("https://raw.githubusercontent.com/emraher/rstudioSettings/master/inst/rstudio-bindings-patrick.json")
+    general <- jsonlite::read_json("https://raw.githubusercontent.com/emraher/rstudioSettings/master/inst/rstudio-prefs-patrick.json")
+    addins <- jsonlite::read_json("https://raw.githubusercontent.com/emraher/rstudioSettings/master/inst/addins.json")
+    snippets <- readLines("https://raw.githubusercontent.com/emraher/rstudioSettings/master/inst/r.snippets")
   } else {
-    keybindings <- jsonlite::read_json("https://raw.githubusercontent.com/pat-s/rstudioSettings/master/inst/rstudio-bindings-minimal.json")
-    general <- jsonlite::read_json("https://raw.githubusercontent.com/pat-s/rstudioSettings/master/inst/rstudio-prefs-minimal.json")
+    keybindings <- jsonlite::read_json("https://raw.githubusercontent.com/emraher/rstudioSettings/master/inst/rstudio-bindings-minimal.json")
+    general <- jsonlite::read_json("https://raw.githubusercontent.com/emraher/rstudioSettings/master/inst/rstudio-prefs-minimal.json")
   }
   # install on user machine ----------------------------------------------------
 
